@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Twitter </title>
+    <meta charset="UTF-8" />
+    <meta name="Description" content="The Kit Team" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+</head>
+    <body>    
+        <div class="container" id="left">
+            <ul>
+                <li> Follow your interests </li>
+                <li> Hear what people are talking about </li>
+                <li> Join the conversation </li>
+            </ul>
+        </div>
+        <div class="container" id="right">
+            <form class="errorxxasd" id="login">
+                <div class="inline vertical-top">
+                    <input id='searchInput' placeholder="Phone, email or username" type="text">
+                    <ul id="nameList">
+                    </ul>
+                    <span class="errorMessage"> Incorrect password </span>
+                </div>
+                <input id='SearchIDPass' placeholder="Password" type="password">
+                <button type="submit"> Log In </button>
+            </form>
+<!-- 
+            <form class="errorxfcd" id="signup">
+                <p>
+                    <img id="logo" ; src="data:image/jpeg;base64,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"
+                        alt="logo"> See what's happening in the world right now
+                </p>
+                <p> Join Twitter today</p>
+                <input id="searchInput" placeholder="Phone or email" type="text">
+                <ul id="List"></ul>
+                <p class="errorMessage"> Please enter a valid email.</p>
+                <input id="SearchIDPass" placeholder="Password" type="password">
+                <p class="errorMessage"> Your password must be at least 6 characters.</p>
+                <button id="SignUpButton" type="submit"> Get Started </button>
+                <span id="line"> Have an account?
+                    <a href="https://twitter.com/login"> Log in </a>
+                </span>
+            </form> -->
+        </div>
+        <footer>
+            <ul>
+                <li> About </li>
+                <li> Help Center</li>
+            </ul>
+        </footer>
+        <script type="text/javascript" src="eventOnInputExercises.js"></script>  
+    </body>
+
+</html>

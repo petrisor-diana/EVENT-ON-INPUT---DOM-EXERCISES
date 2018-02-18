@@ -1,0 +1,158 @@
+
+.container{
+    /* essential stuff */
+    width: 50%;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+    font-size: 24px;
+}
+
+body{
+    font-family: 'Libre Baskerville', serif;
+}
+
+#left{
+    left: 0;
+    background-color: #568eb1;
+    color: #fff;
+}
+#left ul {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-50%); 
+}
+#left ul li{
+  margin: 30px;
+}
+
+#right{
+    right: 0;
+    background-color: #fff;
+}
+
+#block{
+     display: block;
+}
+
+#logo{
+    display: block;
+    width: 50px;
+}
+
+#line{
+    position: absolute;
+    right:0;
+    font-size: 12px;
+    line-height: 60px;
+}
+
+#signup{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#signup input{
+   display: block;
+   margin: 20px 0px;
+   width: 100%; 
+}
+
+input{
+    padding: 15px;
+    /* display: block;
+    margin: 20px 0px;
+    width: 100%; */
+ }
+
+ #login input{
+     margin: 20px 10px;
+ }
+
+#login {
+    text-align: center;
+}
+.inline{
+    display: inline-block;
+}
+.vertical-top{
+   vertical-align: top;
+}
+
+button{
+    border-radius: 25px;
+}
+
+#SignUpButton{
+     padding: 10px 5px;
+     margin: 25px;
+     background-color: #568eb1;
+     color: #fff;
+    }
+
+#login button{
+    padding: 10px 5px;
+    margin: 25px;
+    background-color: #fff;
+    color: #568eb1;
+}
+
+li{
+ list-style: none;
+}
+
+footer{
+    position: absolute;
+    /*position: relative;*/
+    /*position: fixed;*/
+    bottom: 0%;
+    height:50px;
+    width: 100%;   
+}
+.errorMessage{
+    display: none;
+}
+
+form.error .errorMessage{
+    display: block;
+    color: red;
+}
+
+form.error input{
+    border: 2px solid red;
+}
+
+@media (max-width: 500px) {
+    /* max 500px viewport */
+}
+
+@media (max-width: 500px) {
+    /* min 500px viewport */
+    .container{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    #left ul{
+        position: static;
+        width: 100%;
+        transform: translate(0,0);
+        padding: 150px 0;
+    }
+    #right #signup{
+        position: static;
+        transform: translate(0,0);
+    }
+}
+@media (min-width: 500px) {
+    /* min 500 px viewport */
+}
+
+@media (max-width: 500px) and (max-width: 1000px){
+    /* 500px < viewport < 1000px */
+}
